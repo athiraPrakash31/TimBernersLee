@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:ital,wght@0,300;1,200&family=Noto+Serif:wght@300&family=PT+Serif:ital@1&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:  Alegreya;
+}
+header{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 800;
+
+}
+header h2{
+    font-weight: 300;
+    margin: 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+  
+}
+nav ul li{
+    padding: 10px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+#overlay{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+#overlay::before{
+    content: "";
+    background-image: url("https://i.guim.co.uk/img/media/a963fde3d11ae01cb8eaf84b516ee53446406397/809_402_5801_3481/master/5801.jpg?width=1200&quality=85&auto=format&fit=max&s=809c335ce5ca3239fedfaf9e1b61dba6");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.main{
+    position: absolute;
+    color: aliceblue;
+    left: 15%;
+    top: 40%;
+    font-size: larger;
+    font-weight: bolder;
+    text-shadow: 1px 1px white;
+    
+}
+#about{
+    background-color: rgb(51, 45, 45);
+    color: aliceblue;
+    height: 500px;
+}
+.pic img{
+    border-radius: 50%;
+    margin: 40px;
+}
+.pic{
+    display: flex;
+}
+.pic p{
+    text-align: justify;
+    margin: 40px;
+
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+ 
+}
+h3{
+    padding: 10px;
+    text-align: center;
+}
+#home{
+    background-color: rgb(27, 20, 20);
+    color: aliceblue;
+    width: 100%; 
+    padding: 40px;  
+    box-sizing: border-box; 
+}
+.careers h3{
+    padding-bottom: 25px;
+}
+.careers p{
+    text-align: justify;
+}
+.videos{
+    background-color: black;  
+    height: 500px; 
+}
+.videos h3{
+    color: aliceblue;
+    padding: 25px;
+  
+}
+.iframe{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.below{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    padding: 20px;
+}
+footer{
+    background-color: rgb(51, 47, 47);
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+    body{
+       
+        width:400px;
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        background-color: black;
+        color: white;
+        position: sticky;
+        top: 0;
+    }
+    header h2{
+        font-weight: 100;
+        margin: 1px;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+      
+    }
+    nav ul li{
+        padding: 1px;
+    }
+    
+   
+    #overlay::before{
+        content: "";
+        background-image: url("https://i.guim.co.uk/img/media/a963fde3d11ae01cb8eaf84b516ee53446406397/809_402_5801_3481/master/5801.jpg?width=1200&quality=85&auto=format&fit=max&s=809c335ce5ca3239fedfaf9e1b61dba6");
+        background-size: cover;
+        width: 400px;
+        height: 910px;
+    }
+    .main{
+        position: absolute;
+        color: aliceblue;
+        left: 1%;
+        top: 10%;
+        font-size: larger;
+        font-weight: bolder;
+        text-shadow: 1px 1px white;
+        
+    }
+    .iframe{
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        padding: 5px;
+        box-sizing: border-box; 
+
+    }
+    
+    
+    
+}
